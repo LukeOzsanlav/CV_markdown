@@ -1,0 +1,161 @@
+---
+name: Luke
+surname: Ozsanlav-Harris
+position: "Ecologist"
+address: "Witney, Oxfordshire "
+www: lukeozsanlav.github.io/LukeOzHarris/
+email: lukeozharris@outlook.com
+github: LukeOzsanlav
+orcid: 0000-0003-3889-6722
+headcolor: 009ACD
+date: "`r format(Sys.time(), '%B %Y')`"
+fontsize: 10pt
+output:
+  vitae::awesomecv:
+    page_total: true
+header-includes:
+  - \usepackage{leading}
+  - \leading{16pt}
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+```
+
+
+# Summary
+
+**Data**: Statistical Modelling | Spatial Data Analysis | Biologging Data | R | Javascript | QGIS 
+
+**Writing**: Scientific | Technical Reports | Public Communication 
+
+**Interpersonal**: Stakeholder Interactions | Collaboration | Project Management
+
+**Interests**: Avian Migration | Conservation | Animal Movement 
+
+
+
+\faIcon{university} Education
+==================================
+
+```{r education}
+tribble(
+  ~ study, ~ university, ~ loc, ~ dates, ~ details,
+    "PhD in Ecology", "University of Exeter","Penryn, Cornwall", "2019 - 2022", "Dissertation: Understanding the decline of a long-distance migratory bird, The Greenland White-fronted Goose.",
+    "MSc in Applied Ecology (Distinction)", "University of Exeter","Penryn, Cornwall", "2017 - 2018", "Dissertation: Understating the genetic basis of colour polymorphism in the green peach aphid.",
+  "BSc Natural Sciences (2:1)", "University of Durham", "Durham", "2014 - 2017", "Literature Review: The decline of farmland birds in the UK.",
+) %>%  
+  detailed_entries(university, dates, study, loc, details, .protect=FALSE)
+```
+
+
+
+
+\faIcon{briefcase} Employment
+============================================
+
+```{r}
+tribble(
+  ~ study, ~ university, ~ dates, ~ details,
+    "RSPB", "Conservation Scientist", "Sep 2023 - today", "Ran stakeholder workshops to co-develop future landscape conservation strategies",
+    "RSPB", "Conservation Scientist", "Sep 2023 - today", "Carried out predicitve scenario modelling to develop and test which future conservation strategies would provide the biggest benefits to lowland breeding waders in the UK",
+  "MarPAMM funded project: Isle of Rum Manx Shearwater census", "Spatial analyst & Fieldwork", "May - June 2021", "Surveyed the Manx shearwater colony, carrying out habitat and burrow occupancy surveys.",
+  "MarPAMM funded project: Isle of Rum Manx Shearwater census", "Spatial analyst & Fieldwork", "May - June 2021", "Led spatial analysis for the final population estimate; manipulated Sentinel imagery and digital elevation models to build a predictive spatially explicit model that calculated occupied burrow density over the entire colony.",
+  "JNCC Consultant: Review of avoidance rates for collision risk modelling of seabirds", "Analyst and report lead author", "Jan - Feb 2022", "Link to report produced within short 6 weeks deadline: https://hub.jncc.gov.uk/assets/de5903fe-81c5-4a37-a5bc-387cf704924d ",
+  "JNCC Consultant: Review of avoidance rates for collision risk modelling of seabirds", "Analyst and report lead author", "Jan - Feb 2022", "Recalculation of avoidance rates in R and sensivity analysis to test the effect of various input parameters.",
+  "JNCC Consultant: Review of avoidance rates for collision risk modelling of seabirds", "Analyst and report lead author", "Jan - Feb 2022", "Updated avoidance rates were detailed in a technical report and results were presented to marine scientist and windfarm industry stakeholders.",
+  "Wildfowl and Wetlands Trust", "Research Officer", "Oct 2022 - April 2023", "Publish work carried out during my PhD in international scientific journals.",
+  "Wildfowl and Wetlands Trust", "Research Officer", "Oct 2022 - April 2023", "Manage and curate large waterfowl tracking data sets, including upload to online repositories.",
+  "Wildfowl and Wetlands Trust", "Research Officer", "Oct 2022 - April 2023", "Write guide to help researchers with the processing and visualisation of animal tracking data in R."
+  
+) %>%  
+  detailed_entries(with =study, when =dates, what = university, why =details)
+```
+
+
+
+\faIcon*{file} Publications
+===========================
+
+For a list of publications see my [**google scholar profile.**](https://scholar.google.co.uk/citations?user=9VyBol4AAAAJ&hl=en)
+
+
+1. Langley, L. P., Lang, S. D. J., **Ozsanlav-Harris, L.**, & Trevail, A. M. (2024). ExMove: An open-source toolkit for processing and exploring animal-tracking data in R. *Journal of Animal Ecology*, *93* (7), 784-795. https://doi.org/10.1111/1365-2656.14111 
+
+2. **Ozsanlav-Harris, L.**, Burgess, M. D., Hilton, G. M., & Bearhop, S. (2023). Changes in the spatial patterns of avian migrations: Evidence, mechanisms and causes. *Diversity and Distributions*, *29* (12), 1527–1545. https://doi.org/10.1111/ddi.13785
+
+3. **Ozsanlav-Harris, L.**, Hilton, G. M., Griffin, L. R., Walsh, A. J., Cao, L., Weegman, M. D., & Bearhop, S. (2023). Differing drivers of decline within a migratory metapopulation has implications for future conservation. *Ecology and Evolution*, *13* (7). https://doi.org/10.1002/ece3.10281
+
+
+4. McIntosh, A. L. S., **Ozsanlav-Harris, L.**, Taggart, M. A., Shaw, J. M., Hilton, G. M., & Bearhop, S. (2023). Incidence of lead ingestion in managed goose populations and the efficacy of imposed restrictions on the use of lead shot. *Ibis*, *165* (4), 1397–1413. https://doi.org/10.1111/ibi.13210
+
+
+5. Trissi, N., Troczka, B. J., **Ozsanlav-Harris, L.**, Singh, K. S., Mallott, M., Aishwarya, V., O’Reilly, A., Bass, C., & Wilding, C. S. (2023). Differential regulation of the Tor gene homolog drives the red/green pigmentation phenotype in the aphid Myzus persicae. *Insect Biochemistry and Molecular Biology*, *153*, 103896. https://doi.org/10.1016/j.ibmb.2022.103896
+
+6. **Ozsanlav-Harris, L.**, Griffin, L., Weegman, M. D., Cao, L., Hilton, G. M., & Bearhop, S. (2022). Wearable reproductive trackers: quantifying a key life history event remotely. *Animal Biotelemetry*, *10* (24), 1–15. https://doi.org/10.1186/s40317-022-00298-8 
+
+In press
+
+7. **Ozsanlav-Harris, L.**, McIntosh, A. L. S., Griffin, Hilton, G. M., L., Cao, L., Shaw, J. M. & Bearhop, S. (In press) Contrasting effects of shooting disturbance on the movement and behaviour of sympatric wildfowl species. *Ecological Applications*
+
+
+
+
+
+\faIcon{cogs} Research Skills
+===========================
+
+```{r}
+tribble(
+  ~ heading, ~ details,
+  "Data Analysis", "Statistical analysis in R including; generalized mixed effects models incorporating spatial/temporal autocorrelation, time to event/survival modelling and bayesian generlaized linear modelling with brms",
+  "Data Analysis", "Spatial data manipulation and analysis in Google earth engine, QGIS and R (using sf & terra packages)",
+  "Data Analysis", "Download, manipulation and analysis of remote sensing data, e.g. MODIS, Sentinel, ECMFW and NCEP",
+  "Data Analysis", "Collating, analysing and interpreting large databases (more than 250 million biologging data points)",
+  "Data Analysis", "Machine learning analysis, e.g. Random Forests, clustering analysis and support vector machines",
+  "Collaboration", "Carrying out research with multiple partners, e.g. WWT, JNCC, BTO, RSPB, SNH, to acheive mutualistic goals",
+  "Collaboration", "Engagement with local stakeholders, e.g. with farmers on Islay, Scotland while researching contentious goose management cull",
+  "Fieldwork", "Organised logistics for teams to catch birds and deploy biologging devices at various UK sites, interacting with various local stakeholders and organisations (e.g. NatureScot, WWT, local councils and farmers) "
+) %>%  
+  detailed_entries(what = heading, why = details)
+```
+
+
+
+\faIcon{comments} Presentations/Communication
+===========================
+
+```{r}
+tribble(
+  ~ study, ~ university, ~ dates, ~ details,
+  "Scottish Goose Forum", "Invited Seminar", "2024", "Title: The decline of the Islay population of Greenland White-fronted Geese",
+  "University of Lund", "Invited Seminar", "2022", "Title: Differing drivers of decline within a metapopulation has implications for future conservation",
+    "BOU Avian Reproduction Conference", "Poster", "2022", "Title: Differing demographic drivers of low reproductive success within a high artic migrant meta-population",
+  "Goose News", "Magazine Atricle", "2021", "Article on the research carried out during my PhD research to a broader non-academic audience",
+  "Glengoyne Distillery Website", "Blog Posts", "2021", "Multiple blog posts for a funding partner website, conveying the findings of my research to their customers.",
+  
+) %>%  
+  detailed_entries(with =study, when =dates, what = university, why =details, .protect=FALSE)
+```
+
+
+
+
+
+
+\faIcon{pen-fancy} References
+===========================
+
+```{r}
+tribble(
+  ~ Name, ~ Email, ~ University, ~ post,
+  "Prof Staurt Bearhop", "S.Bearhop@exeter.ac.uk", "University of Exeter", "Professor in Animal Ecology",
+  "Dr Robert Hawkes", "robert.hawkes@rspb.org.uk", "RSPB", "Conservation Scientist",
+  
+) %>%  
+  detailed_entries(with = Name, when = post, what = Email, where = University, .protect=FALSE)
+```

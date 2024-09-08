@@ -1,0 +1,18 @@
+---
+title: "Publications"
+format: html
+editor: visual
+bibliography: PublishedPapers.bib
+---
+
+[@ozsanlav-harris2023]
+
+[@mcintosh2023]
+
+[@trissi2023]
+
+[@ozsanlav-harris2022]
+
+[@ozsanlav-harris2023a]
+
+[@langley2024]

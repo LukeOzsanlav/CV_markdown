@@ -1,0 +1,305 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{009ACD}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Luke}{Ozsanlav-Harris}
+
+\position{Spatial Ecologist}
+\address{5 Quaintways, Cheshire, UK}
+
+\email{\href{mailto:lo288@exeter.ac.uk}{\nolinkurl{lo288@exeter.ac.uk}}}
+\homepage{lukeozsanlav.github.io/LukeOzHarris/}
+\orcid{0000-0003-3889-6722}
+\github{LukeOzsanlav}
+\twitter{Luke\_ozharris}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{leading}
+\leading{18pt}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {July 2023}
+    {Luke Ozsanlav-Harris~~~·~~~Curriculum Vitae}
+  {\thepage~ of \pageref{LastPage}~}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{skills-summary}{%
+\section{Skills Summary}\label{skills-summary}}
+
+\textbf{Data}: Statistical Modelling \textbar{} Spatial Data Analysis
+\textbar{} Biologging Data \textbar{} R \textbar{} Shiny \textbar{} QGIS
+\textbar{} Git
+
+\textbf{Writing}: Scientific \textbar{} Technical Reports \textbar{}
+Public Communication
+
+\textbf{Interpersonal}: Stakeholder Engagement \textbar{} Collaboration
+\textbar{} Project Management
+
+\hypertarget{education}{%
+\section{\texorpdfstring{\faIcon{university}
+Education}{ Education}}\label{education}}
+
+\begin{cventries}
+    \cventry{University of Exeter}{PhD in Ecology}{Penryn, Cornwall}{2019 - 2022}{\begin{cvitems}
+\item Dissertation: Understanding the decline of a long-distance migratory bird, The Greenland White-fronted Goose.
+\end{cvitems}}
+    \cventry{University of Exeter}{MSc in Applied Ecology (Distinction)}{Penryn, Cornwall}{2017 - 2018}{\begin{cvitems}
+\item Dissertation: Understating the genetic basis of colour polymorphism in the green peach aphid.
+\end{cvitems}}
+    \cventry{University of Durham}{BSc Natural Sciences (2:1)}{Durham}{2014 - 2017}{\begin{cvitems}
+\item Literature Review: The decline of farmland birds in UK.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{employment}{%
+\section{\texorpdfstring{\faIcon{briefcase}
+Employment}{ Employment}}\label{employment}}
+
+\begin{cventries}
+    \cventry{Spatial analyst \& Fieldwork}{MarPAMM funded project: Isle of Rum Manx Shearwater census}{}{May - June 2021}{\begin{cvitems}
+\item Surveyed the Manx shearwater colony, carrying out habitat and burrow occupancy surveys.
+\item Led spatial analysis for the final population estimate; manipulated Sentinel imagery and digital elevation models to build a predictive spatially explicit model that calculated burrow nesting bird density over the entire colony.
+\end{cvitems}}
+    \cventry{Analyst and report lead author}{JNCC Consultancy: Review of avoidance rates for collision risk modelling of seabirds}{}{Jan - Feb 2022}{\begin{cvitems}
+\item Link to the report produced within short deadline (6 weeks): https://hub.jncc.gov.uk/assets/de5903fe-81c5-4a37-a5bc-387cf704924d
+\item Recalculation of avoidance rates in R and sensivity analysis to test the effect of various input parameters.
+\item Updated avoidance rates were detailed in a technical report and results were presented to marine scientist and windfarm industry stakeholders.
+\end{cvitems}}
+    \cventry{Research Officer}{Wildfowl and Wetlands Trust}{}{Oct 2022 - April 2023}{\begin{cvitems}
+\item Publish work carried out during my PhD in international scientific journals.
+\item Manage and curate waterfowl large tracking data sets, including upload to online repositories.
+\item Write guide to help researchers with the processing and visualisation of animal tracking data in R.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{\texorpdfstring{\faIcon*{file}
+Publications}{ Publications}}\label{publications}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-ozsanlav-harris2023}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Ozsanlav-Harris, L., Hilton, G. M., Griffin, L. R.,
+Walsh, A. J., Cao, L., Weegman, M. D., \& Bearhop, S. (2023). Differing
+drivers of decline within a migratory metapopulation has implications
+for future conservation. \emph{Ecology and Evolution}, \emph{13}(7).
+\url{https://doi.org/10.1002/ece3.10281}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mcintosh2023}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{McIntosh, A. L. S., Ozsanlav-Harris, L., Taggart, M. A.,
+Shaw, J. M., Hilton, G. M., \& Bearhop, S. (2023). Incidence of lead
+ingestion in managed goose populations and the efficacy of imposed
+restrictions on the use of lead shot. \emph{Ibis}.
+\url{https://doi.org/10.1111/ibi.13210}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-trissi2023}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Trissi, N., Troczka, B. J., Ozsanlav-Harris, L., Singh,
+K. S., Mallott, M., Aishwarya, V., O'Reilly, A., Bass, C., \& Wilding,
+C. S. (2023). Differential regulation of the Tor gene homolog drives the
+red/green pigmentation phenotype in the aphid Myzus persicae.
+\emph{Insect Biochemistry and Molecular Biology}, \emph{153}, 103896.
+\url{https://doi.org/10.1016/j.ibmb.2022.103896}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ozsanlav-harris2022}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{Ozsanlav-Harris, L., Griffin, L. R., Weegman, M. D.,
+Cao, L., Hilton, G. M., \& Bearhop, S. (2022). Wearable reproductive
+trackers: quantifying a key life history event remotely. \emph{Animal
+Biotelemetry}, \emph{10}(1).
+\url{https://doi.org/10.1186/s40317-022-00298-8}}
+
+In Review
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-ozsanlav-harris2022}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Ozsanlav-Harris, L., Burgess, M., \& Bearhop, S. (2023).
+Changes in the spatial patterns of avian migrations: Causes, mechanisms
+and consequences. In \emph{Diveristy and Distributions}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ozsanlav-harris2023a}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Ozsanlav-Harris, L., Phillips, R., Bailey, J., Langley,
+L., Wilson, K., Inger, R., \& Bearhop, S. (2023). \emph{Exploring the
+origins of vagrant yellow-browed warblers in western europe}.
+\url{http://dx.doi.org/10.22541/au.167832183.32508222/v1}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ozsanlav-harris2023c}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Ozsanlav-Harris, L., McIntosh, A. L. S., Griffin, L. R.,
+Hilton, G. M., Cao, L., Shaw, J. M., \& Bearhop, S. (2023). Contrasting
+effects of shooting disturbance on the movement and behaviour of
+sympatric wildfowl species. In \emph{Ecological Applications}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-langley2023}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{Langley, L. P., Lang, S., Ozsanlav-Harris, L., \&
+Trevail, A. (2023). ExMove: An open-source toolkit for processing and
+exploring animal tracking data in r. In \emph{Journal of Animal
+Ecology}. \url{http://dx.doi.org/10.1101/2023.05.16.540922}}
+
+\hypertarget{research-skills}{%
+\section{\texorpdfstring{\faIcon{cogs} Research
+Skills}{ Research Skills}}\label{research-skills}}
+
+\begin{cventries}
+    \cventry{Data Analysis}{}{}{}{\begin{cvitems}
+\item Statistical analysis including; generalized mixed effects models incorporating spatial/temporal autocorrelation, time to event/survival modelling and bayesian generlaized linear modelling with brms
+\item Spatial data manipulation and analysis in QGIS and R (using sf & terra package).
+\item Download, manipulation and analysis of remote sensing data, e.g. MODIS, Sentinel, ECMFW and NCEP.
+\item Curating large databases (more than 250 million data points), including integration with online databases.
+\item Analysing animal movement data, e.g. Hidden Markov models, change point analysis, continuous time movement modelling and habitat selection analysis.
+\item Machine learning analysis, e.g. classifying accelerometer data using random forests.
+\end{cvitems}}
+    \cventry{Collaboration}{}{}{}{\begin{cvitems}
+\item Carrying out research with multiple partners, e.g. WWT, JNCC, BTO, RSPB, SNH, to acheive mutualistic goals
+\item Engagement with local stakeholders, particularly rural farmers on Islay, Scotland while researching contentious goose management cull
+\end{cvitems}}
+    \cventry{Fieldwork}{}{}{}{\begin{cvitems}
+\item Organised logistics for teams to catch birds and deploy biologging devices at various UK sites, interacting with various local stakeholders and organisations (e.g. NatureScot, WWT and local councils) 
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{presentationscommunication}{%
+\section{\texorpdfstring{\faIcon{comments}
+Presentations/Communication}{ Presentations/Communication}}\label{presentationscommunication}}
+
+\begin{cventries}
+    \cventry{Invited Seminar (academic)}{University of Lund}{}{2022}{\begin{cvitems}
+\item Title: Differing drivers of decline within a metapopulation has implications for future conservation
+\end{cvitems}}
+    \cventry{Poster (academic)}{BOU Avian Reproduction Conference}{}{2022}{\begin{cvitems}
+\item Title: Differing demographic drivers of low reproductive success within a high artic migrant meta-population
+\end{cvitems}}
+    \cventry{Talk (academic)}{Centre for Ecology and Conservation Symposium}{}{2021}{\begin{cvitems}
+\item Title: Remotely understanding population decline in a high-arctic nesting goose
+\end{cvitems}}
+    \cventry{Invited Atricle (magazine)}{Goose News}{}{2021}{\begin{cvitems}
+\item Magazine-style article on the research carried out during my PhD research to a broader non-academic audience
+\end{cvitems}}
+    \cventry{Blog Posts}{Glengoyne Distillery Website}{}{2021}{\begin{cvitems}
+\item Multiple blog posts for a funding partner website, conveying the findings of my research to their customers.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{references}{%
+\section{\texorpdfstring{\faIcon{pen-fancy}
+References}{ References}}\label{references}}
+
+\begin{cventries}
+    \cventry{S.Bearhop@exeter.ac.uk}{Prof Staurt Bearhop}{University of Exeter}{Professor in Animal Ecology}{}\vspace{-4.0mm}
+    \cventry{R.Sherley@exeter.ac.uk}{Dr Richard Sherley}{University of Exeter}{Senior Lecturer in Marine Vertebrate Ecology}{}\vspace{-4.0mm}
+\end{cventries}
+
+
+\label{LastPage}~
+\end{document}

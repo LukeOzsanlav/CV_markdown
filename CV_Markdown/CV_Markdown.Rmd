@@ -1,0 +1,150 @@
+---
+name: Luke
+surname: Ozsanlav-Harris
+position: "Spatial Ecologist"
+address: "5 Quaintways, Cheshire, UK"
+www: lukeozsanlav.github.io/LukeOzHarris/
+email: "lo288@exeter.ac.uk"
+twitter: Luke_ozharris
+github: LukeOzsanlav
+orcid: 0000-0003-3889-6722
+headcolor: 009ACD
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::awesomecv:
+    page_total: true
+header-includes:
+  - \usepackage{leading}
+  - \leading{18pt}
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+```
+
+
+# Skills Summary
+
+**Data**: Statistical Modelling | Spatial Data Analysis | Biologging Data | R | Shiny | QGIS | Git
+
+**Writing**: Scientific | Technical Reports | Public Communication 
+
+**Interpersonal**: Stakeholder Engagement | Collaboration | Project Management
+
+
+
+\faIcon{university} Education
+==================================
+
+```{r education}
+tribble(
+  ~ study, ~ university, ~ loc, ~ dates, ~ details,
+    "PhD in Ecology", "University of Exeter","Penryn, Cornwall", "2019 - 2022", "Dissertation: Understanding the decline of a long-distance migratory bird, The Greenland White-fronted Goose.",
+    "MSc in Applied Ecology (Distinction)", "University of Exeter","Penryn, Cornwall", "2017 - 2018", "Dissertation: Understating the genetic basis of colour polymorphism in the green peach aphid.",
+  "BSc Natural Sciences (2:1)", "University of Durham", "Durham", "2014 - 2017", "Literature Review: The decline of farmland birds in UK.",
+) %>%  
+  detailed_entries(university, dates, study, loc, details, .protect=FALSE)
+```
+
+
+
+\faIcon{briefcase} Employment
+============================================
+
+```{r}
+tribble(
+  ~ study, ~ university, ~ dates, ~ details,
+  "MarPAMM funded project: Isle of Rum Manx Shearwater census", "Spatial analyst & Fieldwork", "May - June 2021", "Surveyed the Manx shearwater colony, carrying out habitat and burrow occupancy surveys.",
+  "MarPAMM funded project: Isle of Rum Manx Shearwater census", "Spatial analyst & Fieldwork", "May - June 2021", "Led spatial analysis for the final population estimate; manipulated Sentinel imagery and digital elevation models to build a predictive spatially explicit model that calculated burrow nesting bird density over the entire colony.",
+  "JNCC Consultancy: Review of avoidance rates for collision risk modelling of seabirds", "Analyst and report lead author", "Jan - Feb 2022", "Link to the report produced within short deadline (6 weeks): https://hub.jncc.gov.uk/assets/de5903fe-81c5-4a37-a5bc-387cf704924d",
+  "JNCC Consultancy: Review of avoidance rates for collision risk modelling of seabirds", "Analyst and report lead author", "Jan - Feb 2022", "Recalculation of avoidance rates in R and sensivity analysis to test the effect of various input parameters.",
+  "JNCC Consultancy: Review of avoidance rates for collision risk modelling of seabirds", "Analyst and report lead author", "Jan - Feb 2022", "Updated avoidance rates were detailed in a technical report and results were presented to marine scientist and windfarm industry stakeholders.",
+  "Wildfowl and Wetlands Trust", "Research Officer", "Oct 2022 - April 2023", "Publish work carried out during my PhD in international scientific journals.",
+  "Wildfowl and Wetlands Trust", "Research Officer", "Oct 2022 - April 2023", "Manage and curate waterfowl large tracking data sets, including upload to online repositories.",
+  "Wildfowl and Wetlands Trust", "Research Officer", "Oct 2022 - April 2023", "Write guide to help researchers with the processing and visualisation of animal tracking data in R.",
+  
+) %>%  
+  detailed_entries(with =study, when =dates, what = university, why =details)
+```
+
+
+
+\faIcon*{file} Publications
+===========================
+
+```{r}
+bibliography_entries("PublishedPapers.bib") %>%
+  arrange(desc(issued), issued)
+
+```
+
+
+
+In Review   
+
+```{r}
+bibliography_entries("Preprint_references.bib") %>%
+  arrange(desc(author$family), issued)
+
+```
+
+
+
+\faIcon{cogs} Research Skills
+===========================
+
+```{r}
+tribble(
+  ~ heading, ~ details,
+  "Data Analysis", "Statistical analysis including; generalized mixed effects models incorporating spatial/temporal autocorrelation, time to event/survival modelling and bayesian generlaized linear modelling with brms",
+  "Data Analysis", "Spatial data manipulation and analysis in QGIS and R (using sf & terra package).",
+  "Data Analysis", "Download, manipulation and analysis of remote sensing data, e.g. MODIS, Sentinel, ECMFW and NCEP.",
+  "Data Analysis", "Curating large databases (more than 250 million data points), including integration with online databases.",
+  "Data Analysis", "Analysing animal movement data, e.g. Hidden Markov models, change point analysis, continuous time movement modelling and habitat selection analysis.",
+  "Data Analysis", "Machine learning analysis, e.g. classifying accelerometer data using random forests.",
+  "Collaboration", "Carrying out research with multiple partners, e.g. WWT, JNCC, BTO, RSPB, SNH, to acheive mutualistic goals",
+  "Collaboration", "Engagement with local stakeholders, particularly rural farmers on Islay, Scotland while researching contentious goose management cull",
+  "Fieldwork", "Organised logistics for teams to catch birds and deploy biologging devices at various UK sites, interacting with various local stakeholders and organisations (e.g. NatureScot, WWT and local councils) "
+) %>%  
+  detailed_entries(what = heading, why = details, .protect=FALSE)
+```
+
+
+
+\faIcon{comments} Presentations/Communication
+===========================
+
+```{r}
+tribble(
+  ~ study, ~ university, ~ dates, ~ details,
+  "University of Lund", "Invited Seminar (academic)", "2022", "Title: Differing drivers of decline within a metapopulation has implications for future conservation",
+    "BOU Avian Reproduction Conference", "Poster (academic)", "2022", "Title: Differing demographic drivers of low reproductive success within a high artic migrant meta-population",
+  "Centre for Ecology and Conservation Symposium", "Talk (academic)", "2021", "Title: Remotely understanding population decline in a high-arctic nesting goose", 
+  "Goose News", "Invited Atricle (magazine)", "2021", "Magazine-style article on the research carried out during my PhD research to a broader non-academic audience",
+  "Glengoyne Distillery Website", "Blog Posts", "2021", "Multiple blog posts for a funding partner website, conveying the findings of my research to their customers.",
+  
+) %>%  
+  detailed_entries(with =study, when =dates, what = university, why =details, .protect=FALSE)
+```
+
+
+
+\faIcon{pen-fancy} References
+===========================
+
+```{r}
+tribble(
+  ~ Name, ~ Email, ~ University, ~ post,
+  "Prof Staurt Bearhop", "S.Bearhop@exeter.ac.uk", "University of Exeter", "Professor in Animal Ecology",
+  "Dr Richard Sherley", "R.Sherley@exeter.ac.uk", "University of Exeter", "Senior Lecturer in Marine Vertebrate Ecology",
+  
+) %>%  
+  detailed_entries(with = Name, when = post, what = Email, where = University, .protect=FALSE)
+```
+
+
+
